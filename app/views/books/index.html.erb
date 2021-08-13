@@ -1,12 +1,5 @@
-<h1>Books</h1>
-
-<p>Title</p<p>Body</p>
-
-
-
-
 <h3>New book</h3>
-<%= form_with model:@books, url:'/books', local:true do |f| %>
+<%= form_with model:@books, url:'/books#index', local:true do |f| %>
  <p>Title</p>
  <%= f.text_field :title %>
  <p>Body</p>
